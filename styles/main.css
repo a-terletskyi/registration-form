@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #fbfbfb;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 400px;
+}
+
+.sign__title {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.form-control {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+}
+
+.form_ipt, .btn {
+    width: 100%;
+    padding: 20px 10px 10px;
+    font-size: 16px;
+    border: solid 1px #cbc5c5;
+    border-radius: 3px;
+}
+
+.form_ipt:focus-visible, .sign-Up-btn:focus-visible, .sign__link:focus-visible {
+    outline: none;
+    border: solid 1px #62bfd5;
+    box-shadow: 0 0 5px 1px #62bfd5;
+}
+
+label {
+    position: absolute;
+    top: 20px;
+    left: 12px;
+    color: #6e6666;
+    transition: all 0.5s;
+}
+
+.form_ipt:focus+label,
+.form_ipt:not(:placeholder-shown)+label {
+    top: 6px;
+    font-size: 13px;
+}
+
+::-webkit-input-placeholder {
+    opacity: 0;
+}
+
+.btn {
+    padding: 10px 15px;
+    color: #ffffff;
+    border: none;
+    font-size: 17px;
+}
+
+.sign-Up-btn {
+    background-color: #008ecf;
+}
+
+.sign-Up-btn:hover {
+    background-color: #0283bf;
+    cursor: pointer;
+}
+
+.sign-Up-btn:active {
+    outline: solid 2px #0283bf;
+}
+
+.sign-In-btn, .sign-Out-btn {
+    background-color: #30a318;
+}
+
+.sign-In-btn:hover, .sign-Out-btn:hover {
+    background-color: #34951e;
+    cursor: pointer;
+}
+
+.sign-In-btn:active, .sign-Out-btn:active {
+    outline: solid 2px #34951e;
+}
+
+.sign-In-btn:focus-visible, .sign-Out-btn:focus-visible {
+    outline: none;
+    border: solid 1px #30a318;
+    box-shadow: 0 0 5px 1px #30a318;
+}
+
+.sign__link {
+    color: #008ecf;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.sign__link:hover {
+    color: #0677ab;
+    text-decoration: underline;
+}
+
+.form-control.success .form_ipt {
+    border: solid 1px #30a318;
+}
+
+.form-control.success .fas.fa-check {
+    visibility: visible;
+    color: #30a318;
+}
+
+.form-control.error .form_ipt {
+    border: solid 1px #bd3737;
+}
+
+.form-control.error .fas.fa-times {
+    visibility: visible;
+    color: #bd3737;
+}
+
+.form-control.error .error-message {
+    visibility: visible;
+}
+
+.form-control i {
+    position: absolute;
+    top: 15px;
+    right: 14px;
+    font-size: 21px;
+    visibility: hidden;
+}
+
+.error-message {
+    position: absolute;
+    top: 52px;
+    left: 0;
+    visibility: hidden;
+    padding: 5px 9px;
+    color: white;
+    background-color: #bd3737;
+    border-radius: 4px;
+}
+
+.profile {
+    background-color: rgb(240 253 255);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.avatar {
+    width: 100px;
+    margin: 30px 0;
+}
+
+.profile__name {
+    margin-bottom: 15px;
+    font-size: 30px;
+}
+
+.profile__email, .profile__position {
+    margin-bottom: 15px;
+    color: grey;
+    font-size: 18px;
+}
+
+.profile__line {
+    width: 80px;
+    height: 2.5px;
+    margin: 20px auto 100px;
+    background-color: grey;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+}

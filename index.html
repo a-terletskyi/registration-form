@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 6</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sign">
+            <h2 class="sign__title">Please sign up</h2>
+            <form class="sign-Up" novalidate>
+                <div class="form-control">
+                    <input type="text" id="firstName" class="form_ipt" placeholder="First name">
+                    <label for="firstName">First name</label>
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-times"></i>
+                    <small class="error-message">Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="text" id="lastName" class="form_ipt" placeholder="Last name">
+                    <label for="lastName">Last name</label>
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-times"></i>
+                    <small class="error-message">Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="email" id="signUp-email" class="form_ipt" placeholder="Email address">
+                    <label for="signUp-email">Email address</label>
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-times"></i>
+                    <small class="error-message">Error message</small>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="signUp-password" class="form_ipt" placeholder="Password">
+                    <label for="signUp-password">Password</label>
+                    <i class="fas fa-check"></i>
+                    <i class="fas fa-times"></i>
+                    <small class="error-message">Error message</small>
+                </div>
+                <button type="submit" id="signUp-btn" class="btn sign-Up-btn">Sign Up</button>
+            </form>
+            <form class="sign-In hidden" novalidate>
+                <div class="form-control">
+                    <input type="email" id="signIn-email" class="form_ipt" placeholder="Email address">
+                    <label for="signIn-email">Email address</label>
+                </div>
+                <div class="form-control">
+                    <input type="password" id="signIn-password" class="form_ipt" placeholder="Password">
+                    <label for="signIn-password">Password</label>
+                    <small class="error-message signIn-Error">Error message</small>
+                </div>
+                <button type="submit" id="signIn-btn" class="btn sign-In-btn">Sign In</button>
+            </form>
+            <a href="#" class="sign__link">Sign in now</a>
+        </div>
+        <div class="profile hidden">
+            <img class="avatar" src="./styles/images/profile.png" alt="avatar">
+            <h2 class="profile__name"></h2>
+            <p class="profile__email"></p>
+            <p class="profile__position">Designer & Web Developing</p>
+            <hr class="profile__line">
+            <button type="submit" class="btn sign-Out-btn">Sign Out</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
